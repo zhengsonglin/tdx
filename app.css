@@ -1,0 +1,41 @@
+/**自定义样式start**/
+.text-darkGray{
+  color: #666;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.vh100 {
+  height: 100vh;
+}
+.vw100{
+	width: 100vw;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.clean{
+  overflow: hidden;
+}
+.width0{
+  width:0;
+}
+.w100{
+	width: 100%;
+}
+.h100{
+	height: 100%;
+}
+.text-line-through{
+  text-decoration: line-through;
+}
+/**自定义样式end**/
