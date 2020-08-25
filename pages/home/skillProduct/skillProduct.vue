@@ -25,7 +25,7 @@
 			<view class="bg-white padding-sm">
 				<view class="grid col-2 margin-bottom text-center">
 					<view class="padding shadow-warp" v-for="(item, index) in curProducts" :key="item.pa_id">
-						<view><image :src="item.img" mode="widthFix" :lazy-load="true" class="response product-img"></image></view>
+						<view><image :src="item.img" mode="aspectFit" :lazy-load="true" class="response product-img"></image></view>
 						<view class="text-cut text-bold text-darkGray text-sm">{{item.title}}</view>
 						<view class="flex margin-xs">
 							<text class="text-red text-line-through">￥{{item.price}}</text>
@@ -126,8 +126,8 @@
 		border: 1px solid #e54d42;
 	}
 	.scroll-content .product-img{
-		max-height: 148px;
-		height: auto;
+		/* max-height: 148px; */
+		height: 300rpx;
 	}
 	.scroll-content .lowerPrice{
 		border-radius: 0 28rpx 28rpx 0;
